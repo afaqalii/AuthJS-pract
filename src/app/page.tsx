@@ -1,6 +1,10 @@
-"use client"
-import { signIn } from "next-auth/react"
+import SignIn from "./button"
 
 export default function Home() {
-  return <button onClick={() => signIn("google")}></button>
+  return (
+    <>
+      <h1>Hello world!</h1>
+      <SignIn />
+    </>
+  )
 }
